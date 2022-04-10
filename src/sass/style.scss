@@ -11,7 +11,7 @@ $gold: #9d8665;
 .container {
 	max-width: 1470px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 75px 15px;
 }
 a {
 	text-decoration: none;
@@ -24,6 +24,7 @@ header {
 	background-color: $black;
 	padding-bottom: 60px;
 	.header {
+		padding: 0 15px;
 		position: relative;
 		&__banner {
 			display: flex;
@@ -94,16 +95,16 @@ header {
 	justify-content: space-between;
 	height: 750px;
 	position: relative;
-.picture {
-	max-width: 1000px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 0;
-	& img {
-		width: 100%;
-		object-fit: cover;
-	}
+	picture {
+		max-width: 1000px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 0;
+		& img {
+			width: 100%;
+			object-fit: cover;
+		}
 }
 
 .banner__text {
@@ -220,9 +221,6 @@ header {
 /* ============================Visual tour================= */
 .tour {
 	&__container {	
-		max-width: 1470px;
-		margin: 0 auto;
-		padding: 75px 15px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -253,8 +251,15 @@ header {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding-top: 75px;
+		padding-top: 45px;
+		margin-top: 45px;
 		max-width: 440px;
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: 10px 5px 20px $gold;
+			cursor: pointer;
+		}
 			&__title {
 			flex-shrink: 1;
 			padding-top: 25px;
@@ -273,7 +278,7 @@ header {
 			background: $red;
 		}
 		&__subtitle {
-			padding-top: 10px;
+			padding:10px 0;
 			font-family: 'Roboto';
 			font-weight: 100;
 			font-size: 22px;
@@ -292,9 +297,6 @@ header {
 	background-color: $black;
 	color: white;
 	&__container{
-		max-width: 1470px;
-		margin: 0 auto;
-		padding: 75px 15px;
 		display: grid;
 		grid-template-columns:  repeat(2, minmax(440px, 1fr));
 		align-items: center;
@@ -357,6 +359,7 @@ header {
 		height: 100%;
 		z-index: 55;
 		max-width: 720px;
+		cursor: pointer;
 	}
 	
 }
@@ -369,11 +372,6 @@ header {
 
 /* ===================================video========================= */
 .journey {
-	&__container {
-		max-width: 1470px;
-		margin: 0 auto;
-		padding: 75px 15px;
-	}
 		&__text {
 			display: flex;
 			justify-content: space-between;
@@ -456,9 +454,6 @@ header {
 	&__container{
 		height: 2290px;
 		overflow: hidden;
-		max-width: 1470px;
-		margin: 0 auto;
-		padding: 75px 15px;
 	}
 	&__title {
 		font-family: 'Forum';
@@ -491,9 +486,6 @@ header {
 
 /* ===================================form tickets======== */
 	.form {
-		max-width: 1470px;
-		margin: 0 auto;
-		padding: 75px 15px;
 		&__title{
 			font-family: 'Forum';
 			font-weight: 400;
@@ -698,16 +690,11 @@ display: none;
 
 /* ==============contacts================== */
 .contacts {
-	&__container {
-		max-width: 1470px;
-		margin: 0 auto;
-		padding: 75px 15px;
-	}
 	&__title{
 		font-family: 'Forum';
 		font-weight: 400;
-		font-size: 80px;
-		line-height: 90px;
+		font-size: 40px;
+		line-height: px;
 		letter-spacing: 5px;
 		text-transform: uppercase;
 		color: #9D8665;
@@ -763,8 +750,6 @@ footer {
 	.footer__navigation{
 		border-bottom: 3px solid #666666;
 		&__container {
-			max-width: 1470px;
-			margin: 0 auto;
 			padding: 75px 15px 60px 15px;
 			display: flex;
 			justify-content: space-between;
@@ -794,6 +779,7 @@ footer {
 			}
 		}
 		&__text {
+			margin: 0 15px;
 			width: 300px;
 			font-family: 'Roboto';
 			font-weight: 100;
@@ -801,18 +787,19 @@ footer {
 			line-height: 26px;
 			letter-spacing: 2px;
 			color: #FFFFFF;
-			display: flex;
-			justify-content: space-between;
-			flex-shrink: 1;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 15px;
 			}
 			&__text p {
-				padding-bottom: 25px;
-			}
+				max-width: 85px;
+						}
 			&__text p:hover {
 				color: $gold;
 				cursor: pointer;
 			}
 			&__icons {
+				margin-top: 25px;
 				align-self: flex-end;
 				
 			}
@@ -825,7 +812,6 @@ footer {
 	}
 
 	.icon {
-		
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -842,8 +828,7 @@ footer {
 	}
 
 	.copyrights__container {
-		max-width: 1470px;
-		margin: 0 auto;
+
 		padding: 50px 15px;
 		display: flex;
 		justify-content: space-between;
@@ -857,4 +842,5 @@ footer {
 		}
 	}
 @import 'media1024'; 
-@import 'media768'; 
+@import 'media768';
+@import 'media420';

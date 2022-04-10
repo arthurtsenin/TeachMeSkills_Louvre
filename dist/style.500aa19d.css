@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 1470px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 75px 15px;
 }
 
 a {
@@ -90,6 +90,7 @@ header {
   padding-bottom: 60px;
 }
 header .header {
+  padding: 0 15px;
   position: relative;
 }
 header .header__banner {
@@ -160,14 +161,14 @@ header .banner__container {
   height: 750px;
   position: relative;
 }
-header .banner__container .picture {
+header .banner__container picture {
   max-width: 1000px;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 0;
 }
-header .banner__container .picture img {
+header .banner__container picture img {
   width: 100%;
   object-fit: cover;
 }
@@ -282,9 +283,6 @@ header .banner__navigation__next {
 
 /* ============================Visual tour================= */
 .tour__container {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding: 75px 15px;
   display: flex;
   flex-direction: column;
 }
@@ -314,8 +312,15 @@ header .banner__navigation__next {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 75px;
+  padding-top: 45px;
+  margin-top: 45px;
   max-width: 440px;
+  transition: 0.5s;
+}
+.tour .tour__item:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 5px 20px #9d8665;
+  cursor: pointer;
 }
 .tour .tour__item__title {
   flex-shrink: 1;
@@ -335,7 +340,7 @@ header .banner__navigation__next {
   background: #710707;
 }
 .tour .tour__item__subtitle {
-  padding-top: 10px;
+  padding: 10px 0;
   font-family: "Roboto";
   font-weight: 100;
   font-size: 22px;
@@ -353,9 +358,6 @@ header .banner__navigation__next {
   color: white;
 }
 .explore__container {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding: 75px 15px;
   display: grid;
   grid-template-columns: repeat(2, minmax(440px, 1fr));
   align-items: center;
@@ -418,6 +420,7 @@ header .banner__navigation__next {
   height: 100%;
   z-index: 55;
   max-width: 720px;
+  cursor: pointer;
 }
 
 .explore__img img {
@@ -427,11 +430,6 @@ header .banner__navigation__next {
 }
 
 /* ===================================video========================= */
-.journey__container {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding: 75px 15px;
-}
 .journey__text {
   display: flex;
   justify-content: space-between;
@@ -509,9 +507,6 @@ header .banner__navigation__next {
 .gallery__container {
   height: 2290px;
   overflow: hidden;
-  max-width: 1470px;
-  margin: 0 auto;
-  padding: 75px 15px;
 }
 .gallery__title {
   font-family: "Forum";
@@ -542,11 +537,6 @@ header .banner__navigation__next {
 }
 
 /* ===================================form tickets======== */
-.form {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding: 75px 15px;
-}
 .form__title {
   font-family: "Forum";
   font-weight: 400;
@@ -752,16 +742,11 @@ header .banner__navigation__next {
 }
 
 /* ==============contacts================== */
-.contacts__container {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding: 75px 15px;
-}
 .contacts__title {
   font-family: "Forum";
   font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 40px;
+  line-height: px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #9D8665;
@@ -815,8 +800,6 @@ footer {
   border-bottom: 3px solid #666666;
 }
 .footer__navigation__container {
-  max-width: 1470px;
-  margin: 0 auto;
   padding: 75px 15px 60px 15px;
   display: flex;
   justify-content: space-between;
@@ -846,6 +829,7 @@ footer {
   z-index: 55;
 }
 .footer__navigation__text {
+  margin: 0 15px;
   width: 300px;
   font-family: "Roboto";
   font-weight: 100;
@@ -853,18 +837,19 @@ footer {
   line-height: 26px;
   letter-spacing: 2px;
   color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  flex-shrink: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 .footer__navigation__text p {
-  padding-bottom: 25px;
+  max-width: 85px;
 }
 .footer__navigation__text p:hover {
   color: #9d8665;
   cursor: pointer;
 }
 .footer__navigation__icons {
+  margin-top: 25px;
   align-self: flex-end;
 }
 
@@ -891,8 +876,6 @@ footer {
 }
 
 .copyrights__container {
-  max-width: 1470px;
-  margin: 0 auto;
   padding: 50px 15px;
   display: flex;
   justify-content: space-between;
@@ -915,6 +898,7 @@ footer {
     flex-direction: column;
   }
   header .header__menu-container {
+    padding: 0 15px;
     height: 130px;
   }
   header .header__menu {
@@ -955,16 +939,17 @@ footer {
     top: 9px;
   }
   header .banner__container {
+    padding: 0 15px;
     flex-direction: column;
     justify-content: center;
-    height: 525px;
+    height: 750px;
   }
   header .banner__container .picture {
     max-width: 700px;
   }
   header .banner__container .picture img {
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
   }
   header .banner__container .banner__text {
     padding-top: 70px;
@@ -986,7 +971,6 @@ footer {
     line-height: 23px;
   }
   header .banner__navigation {
-    align-self: center;
     position: static;
     align-self: flex-end;
   }
@@ -1163,114 +1147,490 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .banner__container {
+  header .header__menu-container {
+    height: 110px;
+    padding: 0 15px;
+  }
+  header .banner__container {
     max-width: 768px;
-    display: flex;
-    position: relative;
-    height: 728px;
+    padding: 0 15px;
+    display: block;
+    align-self: center;
+    height: 750px;
   }
-
-  .picture {
-    max-width: 728px;
+  header .banner__container picture {
+    align-items: center;
+    width: 100%;
     position: relative;
-    top: 0;
-    left: 0px;
   }
-
-  .banner {
-    justify-content: center;
-    padding-top: 0px;
-    max-width: 508px;
-    position: static;
-    z-index: 3;
+  header .banner__container picture img {
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  header .banner__container .banner__text {
+    padding: 0;
     text-align: center;
+    position: static;
+    max-width: 768px;
   }
-  .banner__title {
+  header .banner__container .banner__text__title {
     font-size: 40px;
     line-height: 60px;
-    margin-bottom: 0px;
   }
-  .banner__subtitle {
-    font-size: 28px;
-    line-height: 33px;
-    margin-bottom: 35px;
+  header .banner__container .banner__text__subtitle {
+    font-size: 20px;
+    line-height: 23px;
   }
-  .banner__button {
+  header .banner__container .banner__text__button {
     display: none;
   }
-
-  .banner__navigation {
-    padding: 0;
-    max-width: 420px;
-    align-self: center;
+  header .banner__navigation {
     position: static;
+    justify-content: space-around;
+    bottom: 0;
+    padding: 0 15px;
+    align-self: center;
+    max-width: 420px;
   }
-  .banner__navigation__pages {
-    display: flex;
-    max-width: 75px;
+  header .banner__navigation__page1, header .banner__navigation__page2 {
+    padding-right: 5px;
+    font-size: 20px;
+    line-height: 40px;
   }
-  .banner__navigation__page1, .banner__navigation__page2 {
-    padding-right: 10px;
-  }
-  .banner__navigation__page2 {
-    padding-left: 10px;
+  header .banner__navigation__page2 {
+    padding-left: 5px;
     border-left: 1px solid white;
   }
-  .banner__navigation__dots {
+  header .banner__navigation__dots {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 45px;
-  }
-  .banner__navigation__dot {
-    width: 12px;
-    height: 12px;
-    background: #FFFFFF;
-    margin: 0 10px;
-  }
-  .banner__navigation__item {
-    height: inherit;
-    display: flex;
-    align-items: center;
-  }
-  .banner__navigation__previous {
-    width: 30px;
-    height: 8px;
-    background: url(/previous.97ace7b5.png) no-repeat;
-  }
-  .banner__navigation__next {
-    width: 30px;
-    height: 8px;
-    background: url(/next.c5bc0cf1.png) no-repeat;
-    margin-left: 15px;
-  }
-  .banner__navigation .header {
-    position: relative;
-    max-width: 1470px;
-    margin: 0 auto;
-  }
-
-  /* ============================Visual tour================= */
-  .tour__item {
-    padding-top: 75px;
-    max-width: 280px;
     margin: 0 35px;
   }
-  .tour__item__title {
-    font-size: 27px;
+  header .banner__navigation__dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 15px;
+  }
+  header .banner__navigation__next {
+    margin-left: 15px;
+  }
+
+  .tour__container {
+    max-width: 768px;
+    padding: 40px 15px;
+  }
+  .tour__title {
+    font-size: 40px;
+    line-height: 60px;
+    padding-bottom: 25px;
+  }
+  .tour__items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: start;
+    justify-items: center;
+    column-gap: 56px;
+  }
+  .tour .tour__item {
+    padding: 40px 0;
+    max-width: 280px;
+  }
+  .tour .tour__item__title {
+    padding-top: 25px;
+    font-size: 28px;
     line-height: 31px;
   }
-  .tour__item__line {
-    margin-top: 10px;
-    max-width: 300px;
-    height: 2px;
-    background: #710707;
-    border-radius: 0px;
+  .tour .tour__item__line {
+    max-width: 150px;
   }
-  .tour__item__subtitle {
-    padding-top: 10px;
+  .tour .tour__item__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .explore__container {
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .explore__text {
+    padding-left: 15px;
+    max-width: 768px;
+    margin-bottom: 0px;
+    align-self: stretch;
+  }
+  .explore__text hr {
+    width: 100%;
+  }
+  .explore__text__title {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+  }
+  .explore__text__line {
+    max-width: 768px;
+    margin-bottom: 60px;
+  }
+  .explore__text__subtitle {
+    display: none;
+  }
+  .explore .explore__img img {
+    object-fit: cover;
+  }
+
+  .journey__container {
+    padding: 40px 15px;
+  }
+  .journey__text {
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  .journey__title {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .journey__subtitle {
+    display: none;
+  }
+  .journey__secondaryvideo {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .journey .secondaryvideo:last-child {
+    display: none;
+  }
+
+  .gallery__container {
+    height: 1300px;
+    max-width: 1024px;
+    padding: 40px 15px;
+  }
+  .gallery__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .gallery__img {
+    grid-template-columns: repeat(2, minmax(352px, 1fr));
+    gap: 24px;
+  }
+  .gallery__img div {
+    width: 352px;
+  }
+  .gallery .row1col2 {
+    display: none;
+  }
+
+  .form {
+    padding: 40px 15px;
+  }
+  .form__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .form .form__buy__img {
+    max-width: 444px;
+  }
+  .form .form__buy__line {
+    margin-bottom: 40px;
+  }
+  .form .form__buy .form__amount {
+    align-items: stretch;
+  }
+  .form .form__buy .form__amount__title {
+    align-self: flex-start;
+    margin-bottom: 25px;
+  }
+  .form .form__tickets {
+    max-width: 175px;
+  }
+
+  .contacts__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .contacts__line {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .contacts__body {
+    margin-top: 40px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .contacts__text h2 {
     font-size: 20px;
     line-height: 23px;
+  }
+  .contacts__text p {
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 15px;
+  }
+  .contacts__map {
+    max-width: 728px;
+    margin-bottom: 0px;
+  }
+
+  footer {
+    background: #030303;
+  }
+  footer .footer__navigation {
+    border-bottom: 3px solid #666666;
+  }
+  footer .footer__navigation__container {
+    padding: 65px 15px 50px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .footer__navigation__icons {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  footer .footer__navigation__icons {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 420px) {
+  header .header__menu-container {
+    height: 110px;
+    padding: 0 15px;
+  }
+  header .header__logo {
+    line-height: 18px;
+    letter-spacing: 5px;
+    padding-left: 55px;
+  }
+  header .banner__container {
+    max-width: 420px;
+    padding: 0 15px;
+    height: 450px;
+  }
+  header .banner__container .banner__text {
+    max-width: 420px;
+  }
+  header .banner__container .banner__text__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  header .banner__container .banner__text__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  header .banner__navigation {
+    max-width: 420px;
+    height: 60px;
+  }
+  header .banner__navigation__page1, header .banner__navigation__page2 {
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  header .banner__navigation__dots {
+    margin: 0 15px;
+  }
+  header .banner__navigation__dot {
+    width: 7px;
+    height: 7px;
+    margin: 0 5px;
+  }
+  header .banner__navigation__previous {
+    width: 20px;
+    height: 8px;
+    background: url(/previous.97ace7b5.png) 0 0/20px 8px no-repeat;
+  }
+  header .banner__navigation__next {
+    width: 20px;
+    height: 8px;
+    background: url(/next.c5bc0cf1.png) 0 0/20px 8px no-repeat;
+    margin-left: 10px;
+  }
+
+  .tour__title {
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 20px;
+  }
+  .tour__items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: start;
+    justify-items: center;
+  }
+  .tour .tour__item {
+    margin: 0;
+  }
+  .tour .tour__item__title {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .tour .tour__item__line {
+    max-width: 150px;
+  }
+  .tour .tour__item__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .explore__text__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .explore__text__line {
+    max-width: 768px;
+    margin-bottom: 40px;
+  }
+  .explore__text__subtitle {
+    display: none;
+  }
+  .explore .explore__img img {
+    align-items: center;
+    object-fit: cover;
+  }
+
+  .journey__container {
+    padding: 40px 15px;
+  }
+  .journey__text {
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  .journey__title {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .journey__subtitle {
+    display: none;
+  }
+  .journey__secondaryvideo {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .journey .secondaryvideo {
+    padding-bottom: 45%;
+  }
+  .journey .video__navigation {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .journey .video__navigation__dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .gallery__container {
+    height: 820px;
+    max-width: 420px;
+    padding: 40px 15px;
+  }
+  .gallery__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .gallery__img {
+    grid-template-columns: repeat(2, minmax(178px, 1fr));
+    gap: 24px;
+  }
+  .gallery__img div {
+    width: 178px;
+  }
+
+  .form {
+    padding: 40px 15px;
+  }
+  .form__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .form .form__buy {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form .form__buy__img {
+    max-width: 444px;
+  }
+  .form .form__buy__line {
+    margin-bottom: 40px;
+  }
+  .form .form__buy .form__amount {
+    text-align: center;
+    align-items: stretch;
+  }
+  .form .form__buy .form__amount__title {
+    align-self: center;
+    margin-bottom: 25px;
+  }
+  .form .form__tickets {
+    max-width: 175px;
+  }
+
+  .parallax {
+    width: 100%;
+  }
+  .parallax img {
+    width: 100%;
+    height: 420px;
+    object-fit: none;
+  }
+
+  .contacts__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contacts__line {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .contacts__text h2 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .contacts__text p {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .contacts__map {
+    max-width: 380px;
+    margin-bottom: 0px;
+  }
+
+  footer .footer__navigation__container {
+    padding: 40px 15px;
+    display: block;
+  }
+  footer .footer__navigation__icons {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  footer .footer__navigation__menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  footer .footer__navigation__text {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 15px;
+    max-width: 420px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    justify-items: center;
+  }
+  footer .footer__navigation__icons {
+    align-self: flex-end;
+  }
+  footer .footer__navigation .icons {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  footer .copyrights__text:nth-child(2) {
+    display: none;
   }
 }
 
