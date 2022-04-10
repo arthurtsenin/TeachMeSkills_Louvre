@@ -22,5 +22,13 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "desandro-matches-selector": "^2.0.2",
+    "ev-emitter": "^2.1.2",
+    "fizzy-ui-utils": "^3.0.0",
+    "get-size": "^3.0.0",
+    "jquery": "^3.6.0",
+    "outlayer": "^2.1.1"
   }
 }
