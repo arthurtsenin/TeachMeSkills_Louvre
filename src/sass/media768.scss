@@ -1,0 +1,126 @@
+$black: #030303;
+$red: #710707;
+$gold: #9d8665;
+@media (max-width:768px) {
+	.banner__container {
+		max-width: 768px;
+		display: flex;
+		position: relative;
+		height: 728px;
+	}
+	
+	.picture {
+		max-width: 728px;
+		position: relative;
+		top: 0;
+		left: 0px;
+	}
+	
+		.banner {
+		justify-content: center;
+		padding-top: 0px;
+		max-width: 508px;
+		position: static;
+		z-index: 3;
+		text-align: center;
+
+		&__title {
+			font-size: 40px;
+			line-height: 60px;
+			margin-bottom: 0px;
+			}
+		&__subtitle {
+			font-size: 28px;
+			line-height: 33px;
+			margin-bottom: 35px;
+		}
+
+		&__button {
+		display: none;
+			}
+	}
+	
+	.banner__navigation {
+		padding: 0;
+		max-width: 420px;
+		align-self: center;
+		position: static;
+	
+		&__pages {
+			display: flex;
+			max-width: 75px;
+		}
+	
+		&__page1, &__page2 {
+			padding-right: 10px ;
+		}
+	
+		&__page2 {
+			padding-left: 10px ;
+			border-left: 1px solid white;
+		}
+	
+		&__dots {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 45px;
+		}
+	
+		&__dot {
+			width: 12px;
+			height: 12px;
+			background: #FFFFFF;
+			margin: 0 10px;
+		}
+		&__item {
+			height: inherit;
+			display: flex;
+			align-items: center;
+		}
+	
+		&__previous {
+			width: 30px;
+			height: 8px;
+			background: url(../assets/previous.png) no-repeat;
+		}
+	
+		&__next{
+			width: 30px;
+			height: 8px;
+			background: url(../assets/next.png) no-repeat;
+			margin-left: 15px;
+		}
+
+		.header {
+			position: relative;
+			max-width: 1470px;
+			margin: 0 auto;
+
+		}
+	}
+	/* ============================Visual tour================= */
+	.tour__item {
+		padding-top: 75px;
+		max-width: 280px;
+		margin: 0 35px;
+		&__title {
+
+		font-size: 27px;
+		line-height: 31px;
+		}
+		
+		&__line {
+		margin-top: 10px;
+		max-width: 300px;
+		height: 2px;
+		background: $red;
+		border-radius: 0px;
+		}
+		&__subtitle {
+		padding-top: 10px;
+		font-size: 20px;
+		line-height: 23px;
+		}
+}
+}
