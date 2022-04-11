@@ -119,7 +119,7 @@ header .header__logo {
 }
 header .header__logo::before {
   content: "";
-  background: url(/logo.e9a9c890.png) no-repeat;
+  background: url(/a7b19ffe762c49facb9f54d1e9a9c890.png) no-repeat;
   color: #FFFFFF;
   position: absolute;
   width: 100%;
@@ -287,13 +287,13 @@ header .banner__navigation__item {
 header .banner__navigation__previous {
   width: 30px;
   height: 8px;
-  background: url(/previous.97ace7b5.png) no-repeat;
+  background: url(/051763cfc3aae7687b1ca88597ace7b5.png) no-repeat;
   cursor: pointer;
 }
 header .banner__navigation__next {
   width: 30px;
   height: 8px;
-  background: url(/next.c5bc0cf1.png) no-repeat;
+  background: url(/b2b21862b00a400508d2081dc5bc0cf1.png) no-repeat;
   margin-left: 20px;
   cursor: pointer;
 }
@@ -422,7 +422,7 @@ header .banner__navigation__next {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/explore_2.d9504c58.png) 0 0/contain no-repeat;
+  background: url(/582417741bae1be122f85cebd9504c58.png) 0 0/contain no-repeat;
   width: 100%;
   height: 100%;
   z-index: 55;
@@ -432,7 +432,7 @@ header .banner__navigation__next {
   position: absolute;
   top: 0;
   left: 59%;
-  background: url(/explore_slider.d12489da.png) 0 0/contain no-repeat;
+  background: url(/dc8f44271e4777ff65f99651d12489da.png) 0 0/contain no-repeat;
   width: 40px;
   height: 100%;
   z-index: 55;
@@ -697,7 +697,7 @@ header .banner__navigation__next {
 }
 .form__amount__number::before {
   content: "";
-  background: url(/minus.a27fccad.png) no-repeat;
+  background: url(/354c2cc2e84de06d60e2352da27fccad.png) no-repeat;
   top: 24px;
   left: 10px;
   width: 38px;
@@ -706,7 +706,7 @@ header .banner__navigation__next {
 }
 .form__amount__number::after {
   content: "";
-  background: url(/plus.67078b06.png) no-repeat;
+  background: url(/f702447d68d04eb48abb1a9867078b06.png) no-repeat;
   top: 15px;
   right: -10px;
   width: 38px;
@@ -806,6 +806,7 @@ header .banner__navigation__next {
 .contacts__map {
   max-width: 960px;
   margin-bottom: 75px;
+  margin-left: 15px;
 }
 .contacts__map img {
   width: 100%;
@@ -840,7 +841,7 @@ footer {
 }
 .footer__navigation__logo::before {
   content: "";
-  background: url(/logo.e9a9c890.png) no-repeat;
+  background: url(/a7b19ffe762c49facb9f54d1e9a9c890.png) no-repeat;
   color: #FFFFFF;
   position: absolute;
   width: 100%;
@@ -919,7 +920,7 @@ footer {
     flex-direction: column;
   }
   header .header__menu-container {
-    padding: 0 15px;
+    padding: 0px;
     height: 130px;
   }
   header .header__menu {
@@ -1168,13 +1169,16 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  header .header {
+    padding: 0;
+  }
   header .header__menu-container {
     height: 110px;
     padding: 0 15px;
   }
   header .banner__container {
     max-width: 768px;
-    padding: 0 15px;
+    padding: 0;
     display: block;
     align-self: center;
     height: 750px;
@@ -1253,7 +1257,7 @@ footer {
     column-gap: 56px;
   }
   .tour .tour__item {
-    padding: 40px 0;
+    padding-top: 30px;
     max-width: 280px;
   }
   .tour .tour__item__title {
@@ -1459,15 +1463,18 @@ footer {
   header .banner__navigation__previous {
     width: 20px;
     height: 8px;
-    background: url(/previous.97ace7b5.png) 0 0/20px 8px no-repeat;
+    background: url(/051763cfc3aae7687b1ca88597ace7b5.png) 0 0/20px 8px no-repeat;
   }
   header .banner__navigation__next {
     width: 20px;
     height: 8px;
-    background: url(/next.c5bc0cf1.png) 0 0/20px 8px no-repeat;
+    background: url(/b2b21862b00a400508d2081dc5bc0cf1.png) 0 0/20px 8px no-repeat;
     margin-left: 10px;
   }
 
+  .tour__item {
+    padding: 20px 0;
+  }
   .tour__title {
     font-size: 28px;
     line-height: 40px;
@@ -1524,11 +1531,14 @@ footer {
   .journey__subtitle {
     display: none;
   }
+  .journey__mainvideo {
+    padding-bottom: 56%;
+  }
   .journey__secondaryvideo {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
   .journey .secondaryvideo {
-    padding-bottom: 45%;
+    padding-bottom: 56%;
   }
   .journey .video__navigation {
     margin-top: 40px;

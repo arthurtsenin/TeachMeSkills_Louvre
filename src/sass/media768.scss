@@ -3,6 +3,7 @@
 @media (max-width:768px) {
 	header {
 		.header {
+			padding: 0;
 
 			&__menu-container {
 				height: 110px;
@@ -12,7 +13,7 @@
 	
 		.banner__container {
 			max-width: 768px;
-			padding: 0 15px;
+			padding: 0;
 			display:block;
 			align-self: center;
 			height: 750px;
@@ -98,7 +99,7 @@
 		}
 		
 		.tour__item {
-			padding: 40px 0;
+			padding-top: 30px;
 			max-width: 280px;
 				&__title {
 				padding-top: 25px;
