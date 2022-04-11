@@ -505,7 +505,7 @@ header {
 	}
 	&__img img {
 		width: 100%;
-		object-fit: fill;
+		object-fit: cover;
 	}
 }
 
@@ -831,7 +831,7 @@ footer {
 	}
 
 	.icons {
-		width: 400px;
+		max-width: 400px;
 		display: flex;
 		justify-content: space-around;
 	}
