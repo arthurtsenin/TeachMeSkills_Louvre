@@ -147,7 +147,7 @@
 			line-height: 40px;
 		}
 		&__img{
-			grid-template-columns: repeat(2, minmax(178px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
 			gap: 24px;
 		}
 		&__img div {

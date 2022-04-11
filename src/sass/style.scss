@@ -143,13 +143,33 @@ header {
 		line-height: 26px;
 		letter-spacing: 2px;
 		color: #FFFFFF;
-		transition: 0.5s;
+		transition: 0.7s;
+
 		}
 		&__button:hover {
 		background: $gold;
 		}
+		&__button:hover{
+			position: relative;
+			animation-name: button;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			background: $gold;
+		}
 	}
 }
+
+@keyframes button{
+
+	0%{
+	left: 0%;
+	}
+	100%{
+	left: 10%;
+	}
+	}
 
 	.banner__navigation {
 		padding: 15px 55px;
@@ -364,6 +384,8 @@ header {
 	
 }
 
+
+
 .explore__img img {
 	object-fit: none;
 	width: 100%;
@@ -443,7 +465,10 @@ header {
 		border-radius: 50%;
 		background: #999999;
 		margin: 0px 10px;
-		
+		&:hover {
+			background: $gold;
+			cursor: pointer;
+		}
 		}
 	}
 

@@ -209,10 +209,27 @@ header .banner__container .banner__text__button {
   line-height: 26px;
   letter-spacing: 2px;
   color: #FFFFFF;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 header .banner__container .banner__text__button:hover {
   background: #9d8665;
+}
+header .banner__container .banner__text__button:hover {
+  position: relative;
+  animation-name: button;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: #9d8665;
+}
+@keyframes button {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 10%;
+  }
 }
 header .banner__navigation {
   padding: 15px 55px;
@@ -498,6 +515,10 @@ header .banner__navigation__next {
   border-radius: 50%;
   background: #999999;
   margin: 0px 10px;
+}
+.video__navigation__dot:hover {
+  background: #9d8665;
+  cursor: pointer;
 }
 
 /* ======================================gallery=============== */
@@ -1227,7 +1248,6 @@ footer {
     padding-bottom: 25px;
   }
   .tour__items {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     align-items: start;
     justify-items: center;
     column-gap: 56px;
@@ -1531,7 +1551,7 @@ footer {
     line-height: 40px;
   }
   .gallery__img {
-    grid-template-columns: repeat(2, minmax(178px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
     gap: 24px;
   }
   .gallery__img div {
