@@ -5,8 +5,6 @@ $gold: #9d8665;
 
 @import 'nulstyle.scss';
 
-
-
 /* ============header=============== */
 .container {
 	max-width: 1470px;
@@ -357,6 +355,8 @@ header {
 .explore__img {
 	max-width: 720px;
 	position: relative;
+	top: 0;
+	left: 0;
 	z-index: 6;
 	margin-left: 15px;
 	&::before {
@@ -383,11 +383,8 @@ header {
 	}
 	
 }
-
-
-
 .explore__img img {
-	object-fit: none;
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
@@ -760,6 +757,7 @@ display: none;
 		&__map {
 			max-width: 960px;
 			margin-bottom: 75px;
+			margin-left:15px
 		}
 
 		&__map img {

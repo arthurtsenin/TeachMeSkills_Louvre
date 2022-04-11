@@ -3,6 +3,7 @@
 @media (max-width:768px) {
 	header {
 		.header {
+			padding: 0;
 
 			&__menu-container {
 				height: 110px;
@@ -12,7 +13,7 @@
 	
 		.banner__container {
 			max-width: 768px;
-			padding: 0 15px;
+			padding: 0;
 			display:block;
 			align-self: center;
 			height: 750px;
@@ -98,7 +99,7 @@
 		}
 		
 		.tour__item {
-			padding: 40px 0;
+			padding-top: 30px;
 			max-width: 280px;
 				&__title {
 				padding-top: 25px;
@@ -122,7 +123,6 @@
 			flex-direction: column;
 		}
 		&__text {
-			padding-left:15px;
 			max-width: 768px;
 			margin-bottom: 0px;
 			align-self: stretch;
@@ -141,6 +141,9 @@
 		}
 		&__text__subtitle {
 			display: none;
+		}
+		.explore__img {
+			margin-left: 0;
 		}
 		.explore__img img {
 			object-fit: cover;
@@ -181,7 +184,7 @@
 			line-height: 60px;
 		}
 		&__img{
-			grid-template-columns:  repeat(2, minmax(352px, 1fr));
+			grid-template-columns:  repeat(auto-fit, minmax(352px, 1fr));
 			gap: 24px;
 		}
 		&__img div {
