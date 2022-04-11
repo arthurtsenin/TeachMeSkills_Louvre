@@ -355,6 +355,8 @@ header {
 .explore__img {
 	max-width: 720px;
 	position: relative;
+	top: 0;
+	left: 0;
 	z-index: 6;
 	margin-left: 15px;
 	&::before {
@@ -381,11 +383,8 @@ header {
 	}
 	
 }
-
-
-
 .explore__img img {
-	object-fit: none;
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
