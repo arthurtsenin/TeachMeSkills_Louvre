@@ -270,9 +270,10 @@ header {
 		flex-direction: column;
 		justify-content: space-between;
 		padding-top: 45px;
+		padding: 5px;
 		margin-top: 45px;
 		max-width: 440px;
-		transition: 1.0s;
+		transition: .7s;
 		&:hover {
 			transform: scale(1.1);
 			box-shadow: 10px 5px 20px $gold;
@@ -346,6 +347,9 @@ header {
 		font-size: 22px;
 		line-height: 38px;
 		color: #FFFFFF;
+	}
+	&__text__subtitle span {
+		color:$gold;
 	}
 	&__text__subtitle p {
 		margin-bottom: 25px;
@@ -577,7 +581,7 @@ header {
 }
 
 .form__radio__title  {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .form__amount__title  {
@@ -629,42 +633,42 @@ display: none;
 .form__amount__age18,
 .form__amount__age65 {
 	font-family: 'Roboto';
+	padding-top:10px ;
 	font-weight: 300;
 	font-size: 22px;
 	line-height: 26px;
 	color: #000000;
 }
 
-.form__amount__number {
-	display: flex;
-	justify-content: center;
+.buttom {
+	display:flex ;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	height: 50px;
 	border: 3px solid #000000;
-	box-sizing: border-box;
-	border-radius: 0px;
-	position: relative;
-	margin-bottom: 20px;
-	&::before {
-		content: "";
-		background: url(../assets/minus.png) center no-repeat;
-		top: 5px;
-		left: 0;
-		width: 38px;
-		height: 38px;
-		position: absolute;
+}
 
-	}
-	&::after {
-		content: "";
-		background: url(../assets/plus.png) center no-repeat;
-		top: 5px;
-		right: 0;
-		width: 38px;
-		height: 38px;
-		position: absolute;
-	}
+.buttom1 input {
+	text-align: center;
+	max-width: 50px;
+	border: none;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 26px;
+}
+.buttom2 {
+	display:flex ;
+	flex-direction: column;
+
+}
+.buttom2_2 button, .buttom2_1 button{
+	background: white;
+	border: none;
+	width: 50px;
+	height: 28.5px;
+	font-size: 32px;
+	font-weight: 700;
 }
 
 .form__amount__price {
