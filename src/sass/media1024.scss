@@ -275,12 +275,14 @@
 			font-size: 50px;
 			line-height: 75px;
 		}
-
-
 		.form__buy {
 			&__img {
 				max-width: 700px; 
 			}
+		}
+		.form__amount__price {
+			font-size: 23px;
+			line-height: 30px;
 		}
 	
 		.form__tickets {
@@ -302,7 +304,6 @@
 			line-height: 75px;
 		}
 		&__line {
-
 			margin-bottom: 60px;
 			}
 			&__body {
