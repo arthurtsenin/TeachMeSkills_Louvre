@@ -9,43 +9,56 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Louvre</title>
 </head>
 
 <body>
 	<header>
 		<section class="header container">
-			<div class="header__banner">
-				<div class="header__menu-container ">
-					<div class="header__logo">Louvre</div>
-					<ul class="header__menu">
-						<li class="header__menu__list"><a href="#tour">Visiting</a></li>
-						<li class="header__menu__list"><a href="#explore">Explore</a></li>
-						<li class="header__menu__list"><a href="#video">Video</a></li>
-						<li class="header__menu__list"><a href="#gallery">Gallery</a></li>
-						<li class="header__menu__list"><a href="#tickets">Tickets</a></li>
-						<li class="header__menu__list"><a href="#contacts">Contacts</a></li>
-					</ul>
-					<div class="header__burger">
-						<span></span>
-					</div>
+			<div class="header__menu-container ">
+				<div class="header__logo">Louvre</div>
+				<ul class="header__menu">
+					<li class="header__menu__list"><a href="#tour">Visiting</a></li>
+					<li class="header__menu__list"><a href="#explore">Explore</a></li>
+					<li class="header__menu__list"><a href="#video">Video</a></li>
+					<li class="header__menu__list"><a href="#gallery">Gallery</a></li>
+					<li class="header__menu__list"><a href="#tickets">Tickets</a></li>
+					<li class="header__menu__list"><a href="#contacts">Contacts</a></li>
+				</ul>
+				<div class="header__burger">
+					<input type="checkbox" id="main-menu">
+					<label for="main-menu"><span></span></label>
+					<nav class="second-menu">
+						<a href="#tour">Visiting</a>
+						<a href="#explore">Explore</a>
+						<a href="#video">Video</a>
+						<a href="#gallery">Gallery</a>
+						<a href="#tickets">Tickets</a>
+						<a href="#contacts">Contacts</a>
+					</nav>
 				</div>
+			</div>
+			<div class="header__banner">
+
 				<div class="banner__container ">
-					<div class="banner__text">
+					<div data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine" class="banner__text">
 						<div class="banner__text__title">Welcome <br> to the Louvre</div>
 						<div class="banner__text__subtitle">From the castle to the museum</div>
 						<button class="banner__text__button"> Discover the Louvre </button>
 					</div>
 
-					<div class="picture">
+					<div  class="picture">
 						<picture>
-<!-- 						<source srcset="../src/assets/banner768.png" type="image/png" media="max-width:768px"> -->
-						<img src="../src/assets/banner.png" alt="">
-					</picture>
+							<img data-aos="zoom-out-left"
+							data-aos-offset="300" data-aos-easing="ease-in-sine" src="../src/assets/banner.png" alt="">
+						</picture>
 					</div>
 
 				</div>
-			</div>
+			</div> 
 			<div class="banner__navigation">
 				<div class="banner__navigation__pages">
 					<div class="banner__navigation__page1">01</div>
@@ -71,7 +84,9 @@
 			<h2 class="tour__title">Virtual tour</h2>
 			<hr class="tour__line">
 			<div class="tour__items">
-				<div class="tour__item">
+				<div data-aos="flip-left"
+				data-aos-easing="ease-out-cubic"
+				data-aos-duration="2000" class="tour__item">
 					<a href="#">
 						<div class="tour__item__img"><img src="assets/tour_1.png" alt=""></div>
 						<div class="tour__item__title">Royal Palace</div>
@@ -82,7 +97,9 @@
 				</div>
 				</a>
 				<a href="#">
-					<div class="tour__item">
+					<div data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="2000" class="tour__item">
 						<div class="tour__item__img"><img src="assets/tour_2.png" alt=""></div>
 						<div class="tour__item__title">Denon Wing</div>
 						<div class="tour__item__line">
@@ -92,7 +109,9 @@
 					</div>
 				</a>
 				<a href="#">
-					<div class="tour__item">
+					<div data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="2000"class="tour__item">
 						<div class="tour__item__img"><img src="assets/tour_3.png" alt=""></div>
 						<div class="tour__item__title">Colonnade Perrault</div>
 						<div class="tour__item__line">
@@ -102,7 +121,9 @@
 					</div>
 				</a>
 				<a href="#">
-					<div class="tour__item">
+					<div data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="2000" class="tour__item">
 						<div class="tour__item__img"><img src="assets/tour_4.png" alt=""></div>
 						<div class="tour__item__title">Greek hall</div>
 						<div class="tour__item__line">
@@ -112,7 +133,9 @@
 					</div>
 				</a>
 				<a href="#">
-					<div class="tour__item">
+					<div data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="2000" class="tour__item">
 						<div class="tour__item__img"><img src="assets/tour_5.png" alt=""></div>
 						<div class="tour__item__title">Mona Lisa</div>
 						<div class="tour__item__line">
@@ -122,7 +145,9 @@
 					</div>
 				</a>
 				<a href="#">
-					<div class="tour__item">
+					<div data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="2000" class="tour__item">
 						<div class="tour__item__img"><img src="assets/tour_6.png" alt=""></div>
 						<div class="tour__item__title">Night Palace</div>
 						<div class="tour__item__line">
@@ -136,7 +161,9 @@
 	</section>
 	<section id="explore" class="explore">
 		<div class="explore__container container">
-			<div class="explore__text">
+			<div data-aos="fade-right"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine" class="explore__text">
 				<div class="explore__text__title">Picture explore</div>
 				<div class="explore__text__line">
 					<hr>
@@ -150,7 +177,8 @@
 						because it looked different.</p>
 				</div>
 			</div>
-			<div class="explore__img">
+			<div data-aos="zoom-out-left"
+			data-aos-offset="300" data-aos-easing="ease-in-sine" class="explore__img">
 				<img class="layer1" src=".//assets/explore_1.png" alt="">
 			</div>
 		</div>
@@ -158,7 +186,10 @@
 
 	<section id="video" class="journey">
 		<div class="journey__container container">
-			<div class="journey__text">
+			<div data-aos="fade-zoom-in"
+			data-aos-easing="ease-in-back"
+			data-aos-delay="300"
+			data-aos-offset="0" class="journey__text">
 				<div class="journey__title">Video journey</div>
 				<div class="journey__subtitle">Enter and visit one of the most famous museums in the world and enjoy
 					masterpieces such as Mona Lisa or Hammurabi's Code</div>
@@ -169,16 +200,27 @@
 					allowfullscreen></iframe>
 			</div>
 			<div class="journey__secondaryvideo">
-				<div class="secondaryvideo"><iframe src="https://www.youtube.com/embed/XiJOdWXpzKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-				<div class="secondaryvideo"><iframe src="https://www.youtube.com/embed/MufP60vnLnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-				<div class="secondaryvideo"><iframe src="https://www.youtube.com/embed/kDvTYlAnZK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				<div class="secondaryvideo"><iframe src="https://www.youtube.com/embed/XiJOdWXpzKA"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe></div>
+				<div class="secondaryvideo"><iframe src="https://www.youtube.com/embed/MufP60vnLnU"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe></div>
+				<div class="secondaryvideo"><iframe src="https://www.youtube.com/embed/kDvTYlAnZK8"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe></div>
 			</div>
 			<div class="video__navigation">
+				<div class="video__navigation__stroke"><a href="#"> <img src="../src/assets/stroke_left.png" alt="left"></a></div>
 				<div class="video__navigation__dot"></div>
 				<div class="video__navigation__dot"></div>
 				<div class="video__navigation__dot"></div>
 				<div class="video__navigation__dot"></div>
 				<div class="video__navigation__dot"></div>
+				<div class="video__navigation__stroke"><a href="#"><img src="../src/assets/stroke_right.png" alt="right"></a></div>
 			</div>
 		</div>
 	</section>
@@ -187,23 +229,28 @@
 		<div class="gallery__container container">
 			<div class="gallery__title">Art Gallery</div>
 			<div class="gallery__img">
-
-				<div class="row1col1"><img src="../src/assets/gallery/row1col1.png" alt=""></div>
-				<div class="row1col2"><img src="../src/assets/gallery/row1col2.png" alt=""></div>
-				<div class="row1col3"><img src="../src/assets/gallery/row1col3.png" alt=""></div>
-				<div class="row2col1"><img src="../src/assets/gallery/row2col1.png" alt=""></div>
-
-				<div class="row2col2"><img src="../src/assets/gallery/row2col2.png" alt=""></div>
-				<div class="row2col3"><img src="../src/assets/gallery/row2col3.png" alt=""></div>
-				<div class="row3col1"><img src="../src/assets/gallery/row3col1.png" alt=""></div>
-				<div class="row3col2"><img src="../src/assets/gallery/row3col2.png" alt=""></div>
-
-
-				<div class="row3col3"><img src="../src/assets/gallery/row3col3.png" alt=""></div>
-				<div class="row4col1"><img src="../src/assets/gallery/row4col1.png" alt=""></div>
-				<div class="row4col2"><img src="../src/assets/gallery/row4col2.png" alt=""></div>
-				<div class="row4col3"><img src="../src/assets/gallery/row4col3.png" alt=""></div>
-
+				<div data-aos="flip-left"
+				data-aos-easing="ease-out-cubic"
+				data-aos-duration="2000" class="row1col1"><img src="../src/assets/gallery/row1col1.png" alt=""></div>
+				<div  class="row1col2"><img src="../src/assets/gallery/row1col2.png" alt=""></div>
+				<div  data-aos="flip-left"
+				data-aos-easing="ease-out-cubic"
+				data-aos-duration="2000"class="row1col3"><img src="../src/assets/gallery/row1col3.png" alt=""></div>
+				<div  class="row2col1"><img src="../src/assets/gallery/row2col1.png" alt=""></div>
+				<div data-aos="flip-left"
+				data-aos-easing="ease-out-cubic"
+				data-aos-duration="2000" class="row2col2"><img src="../src/assets/gallery/row2col2.png" alt=""></div>
+				<div  class="row2col3"><img src="../src/assets/gallery/row2col3.png" alt=""></div>
+				<div  data-aos="flip-left"
+				data-aos-easing="ease-out-cubic"
+				data-aos-duration="2000"class="row3col1"><img src="../src/assets/gallery/row3col1.png" alt=""></div>
+				<div  class="row3col2"><img src="../src/assets/gallery/row3col2.png" alt=""></div>
+				<div data-aos="flip-up" class="row3col3"><img src="../src/assets/gallery/row3col3.png" alt=""></div>
+				<div  class="row4col1"><img src="../src/assets/gallery/row4col1.png" alt=""></div>
+				<div  data-aos="flip-left"
+				data-aos-easing="ease-out-cubic"
+				data-aos-duration="2000"class="row4col2"><img src="../src/assets/gallery/row4col2.png" alt=""></div>
+				<div  class="row4col3"><img src="../src/assets/gallery/row4col3.png" alt=""></div>
 			</div>
 		</div>
 	</section>
@@ -214,9 +261,12 @@
 			<hr>
 		</div>
 		<div class="form__buy">
-			<div class="form__buy__img"><img src="assets/img_form.png" alt=""></div>
+			<div data-aos="fade-right"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine"  class="form__buy__img"><img src="assets/img_form.png" alt=""></div>
 			<form action="#">
-				<div class="form__tickets">
+				<div data-aos="zoom-out-left"
+				data-aos-offset="300" data-aos-easing="ease-in-sine" class="form__tickets">
 					<div class="form__radio">
 						<div class="form__radio__title">Ticket Type</div>
 						<div class="form__radio__radio">
@@ -284,25 +334,23 @@
 				<div class="footer__navigation__logo">Louvre</div>
 				<div class="footer__navigation__menu">
 					<div class="footer__navigation__text">
-
-							<p>Visiting</p>
-							<p>Explore</p>
-							<p>Video</p>
-
-
-							<p>Gallery</p>
-							<p>Tickets</p>
-							<p>Contacts</p>
-						</div>
+						<p>Visiting</p>
+						<p>Explore</p>
+						<p>Video</p>
+						<p>Gallery</p>
+						<p>Tickets</p>
+						<p>Contacts</p>
 					</div>
-
+				</div>
 				<div class="footer__navigation__icons">
 					<ul class="icons">
-						<a href="#"><li class="icon"><img src="../src/assets/youtube.png" alt=""></li></a>
-						<a href="#"><li class="icon"><img src="../src/assets/instagram.png" alt=""></li></a>
-						<a href="#"><li class="icon"><img src="../src/assets/facebook.png" alt=""></li></a>
-						<a href="#"><li class="icon"><img src="../src/assets/twitter.png" alt=""></li></a>
-						<a href="#"><li class="icon"><img src="../src/assets/pint.png" alt=""></li></a>
+						<li class="icon"><a href="#"><img src="../src/assets/youtube.png" alt=""></a></li>
+						<li class="icon"><a href="#"><img src="../src/assets/instagram.png" alt=""></a></li>
+						<li class="icon"><a href="#"><img src="../src/assets/facebook.png" alt=""></li></a>
+						<a href="#">
+							<li class="icon"><img src="../src/assets/twitter.png" alt="">
+						</a></li>
+						<li class="icon"><a href="#"><img src="../src/assets/pint.png" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
@@ -315,6 +363,10 @@
 			</div>
 		</section>
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	 </script>
 </body>
 
 </html>

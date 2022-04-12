@@ -4,10 +4,10 @@
 	header {
 		.header {
 			padding: 0;
+			padding: 0 15px;
 
 			&__menu-container {
 				height: 110px;
-				padding: 0 15px;
 			}
 		}
 	
@@ -249,37 +249,35 @@
 				padding-bottom: 15px;
 			}
 			&__map {
+				align-self: center;
 				max-width: 728px;
-				margin-bottom: 0px;
+				margin: 0;
 			}
-	
+
 	}
 		
 	footer {
-			background: $black;
-			.footer__navigation{
-				border-bottom: 3px solid #666666;
-				&__container {
-					padding: 65px 15px 50px 15px;
-					display: flex;
-					justify-content: space-between;
-					flex-wrap: wrap;
-	
-					
-				}
-				&__icons {
-					position: relative;
-					right: 0;
-					top: 0;
-				}
-				&__menu{
-	
-				}
-				&__icons{
-					align-self: flex-end;
-	
-				}
+		background: $black;
+		.footer__navigation{
+			border-bottom: 3px solid #666666;
+			&__container {
+				padding: 65px 15px 50px 15px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
 			}
+			&__icons {
+				position: relative;
+				right: 0;
+				top: 0;
+			}
+			&__menu{
+				padding:15px 0;
+			}
+			&__icons{
+				align-self: flex-end;
+			}
+		}
 	}
 }
 

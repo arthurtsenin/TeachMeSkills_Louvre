@@ -6,18 +6,28 @@
 			display: flex;
 			flex-direction: column;
 			&__menu-container {
+				position: relative;
+				top: 0;
+				left: 0;
 				padding: 0px;
 				height: 130px;
+				z-index: 100;
 			}
 			&__menu {
 				display: none;
+				&__list {
+					height: inherit;
+					padding: 40px 55px;
+				}
 			}
 			&__burger {
 			display: block;
-			position: relative;
+			position: absolute;
+			top: 38%;
+			right: 0;
 			width: 30px;
 			height: 20px;
-			position: relative;
+
 			&::before{
 				content: "";
 				background-color: white;
@@ -45,8 +55,45 @@
 					height: 2px;
 					top: 9px;
 				}
+
+				.second-menu{
+					border-radius: 5px;
+					padding-top: 55px;
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+					bottom: 0;
+					right: 0;
+					transform: translateY(100%);
+					background: rgba(0, 0, 0, 0.774);
+					font-size: 40px;
+					opacity: 0;
+					transition: 0.5s all ease-in;
+				}
+
+				.second-menu a {
+					max-width: 1024px;
+					display: block;
+					text-align: center;
+					padding: 20px 105px;
+					transition: 0.5s all;
+					}
+				
+				.second-menu a:hover{
+					color: $gold;
+				}
+				#main-menu {
+				appearance: none;
+				transition: 0.5s all;
+				}
+			
+				#main-menu:checked ~ .second-menu {
+					opacity: 1;
+				}
 			}
 		}
+
+
 	
 		.banner__container {
 			padding: 0 15px;
@@ -159,8 +206,6 @@
 		}
 		&__text__subtitle p:last-child {
 			display: none;
-
-
 		}
 		&__text__subtitle p {
 			margin: 0;
@@ -182,7 +227,9 @@
 			&__subtitle {
 			display: none;
 			}
-		
+					&__mainvideo {
+			margin-bottom: 40px;
+			}				
 			&__secondaryvideo {
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
