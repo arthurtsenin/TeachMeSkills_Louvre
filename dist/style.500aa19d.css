@@ -87,7 +87,7 @@ header {
   width: 100%;
   color: white;
   background-color: #030303;
-  padding-bottom: 60px;
+  padding-bottom: 75px;
 }
 header .header {
   padding: 0 15px;
@@ -99,6 +99,7 @@ header .header__banner {
   justify-content: space-between;
 }
 header .header__menu-container {
+  z-index: 9999;
   max-width: 1470px;
   height: 150px;
   display: flex;
@@ -171,6 +172,7 @@ header .banner__container picture {
 header .banner__container picture img {
   width: 100%;
   object-fit: cover;
+  transition: 0.5s;
 }
 header .banner__container .banner__text {
   padding-top: 150px;
@@ -332,7 +334,7 @@ header .banner__navigation__next {
   padding-top: 45px;
   margin-top: 45px;
   max-width: 440px;
-  transition: 0.5s;
+  transition: 1s;
 }
 .tour .tour__item:hover {
   transform: scale(1.1);
@@ -476,7 +478,7 @@ header .banner__navigation__next {
   align-self: center;
   padding-bottom: 56%;
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 .journey__mainvideo iframe {
   position: absolute;
@@ -489,7 +491,7 @@ header .banner__navigation__next {
 .journey__secondaryvideo {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 42px;
+  gap: 40px;
 }
 .journey .secondaryvideo {
   padding-bottom: 56%;
@@ -509,6 +511,9 @@ header .banner__navigation__next {
   display: flex;
   justify-content: center;
   position: relative;
+}
+.video__navigation__stroke {
+  padding: 0 10px;
 }
 .video__navigation__dot {
   display: inline-block;
@@ -699,18 +704,18 @@ header .banner__navigation__next {
 }
 .form__amount__number::before {
   content: "";
-  background: url(/minus.a27fccad.png) no-repeat;
-  top: 24px;
-  left: 10px;
+  background: url(/minus.a27fccad.png) center no-repeat;
+  top: 5px;
+  left: 0;
   width: 38px;
   height: 38px;
   position: absolute;
 }
 .form__amount__number::after {
   content: "";
-  background: url(/plus.67078b06.png) no-repeat;
-  top: 15px;
-  right: -10px;
+  background: url(/plus.67078b06.png) center no-repeat;
+  top: 5px;
+  right: 0;
   width: 38px;
   height: 38px;
   position: absolute;
@@ -768,8 +773,8 @@ header .banner__navigation__next {
 .contacts__title {
   font-family: "Forum";
   font-weight: 400;
-  font-size: 40px;
-  line-height: px;
+  font-size: 80px;
+  line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #9D8665;
@@ -878,12 +883,12 @@ footer {
 }
 
 .icons {
-  max-width: 400px;
+  max-width: 500px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-
-.icon {
+.icons .icon {
+  margin: 0 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -894,7 +899,7 @@ footer {
   filter: drop-shadow(0px 0px 0px #666666);
   border-radius: 50px;
 }
-.icon img {
+.icons .icon img {
   width: 20px;
   height: 20px;
 }
@@ -922,18 +927,27 @@ footer {
     flex-direction: column;
   }
   header .header__menu-container {
+    position: relative;
+    top: 0;
+    left: 0;
     padding: 0px;
     height: 130px;
+    z-index: 100;
   }
   header .header__menu {
     display: none;
   }
+  header .header__menu__list {
+    height: inherit;
+    padding: 40px 55px;
+  }
   header .header__burger {
     display: block;
-    position: relative;
+    position: absolute;
+    top: 38%;
+    right: 0;
     width: 30px;
     height: 20px;
-    position: relative;
   }
   header .header__burger::before {
     content: "";
@@ -961,6 +975,37 @@ footer {
     width: 100%;
     height: 2px;
     top: 9px;
+  }
+  header .header__burger .second-menu {
+    border-radius: 5px;
+    padding-top: 55px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, 0.774);
+    font-size: 40px;
+    opacity: 0;
+    transition: 0.5s all ease-in;
+  }
+  header .header__burger .second-menu a {
+    max-width: 1024px;
+    display: block;
+    text-align: center;
+    padding: 20px 105px;
+    transition: 0.5s all;
+  }
+  header .header__burger .second-menu a:hover {
+    color: #9d8665;
+  }
+  header .header__burger #main-menu {
+    appearance: none;
+    transition: 0.5s all;
+  }
+  header .header__burger #main-menu:checked ~ .second-menu {
+    opacity: 1;
   }
   header .banner__container {
     padding: 0 15px;
@@ -1080,6 +1125,9 @@ footer {
   .journey__subtitle {
     display: none;
   }
+  .journey__mainvideo {
+    margin-bottom: 40px;
+  }
   .journey__secondaryvideo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -1175,10 +1223,10 @@ footer {
 @media (max-width: 768px) {
   header .header {
     padding: 0;
+    padding: 0 15px;
   }
   header .header__menu-container {
     height: 110px;
-    padding: 0 15px;
   }
   header .banner__container {
     max-width: 768px;
@@ -1398,8 +1446,9 @@ footer {
     padding-bottom: 15px;
   }
   .contacts__map {
+    align-self: center;
     max-width: 728px;
-    margin-bottom: 0px;
+    margin: 0;
   }
 
   footer {
@@ -1418,6 +1467,9 @@ footer {
     position: relative;
     right: 0;
     top: 0;
+  }
+  footer .footer__navigation__menu {
+    padding: 15px 0;
   }
   footer .footer__navigation__icons {
     align-self: flex-end;
@@ -1531,14 +1583,15 @@ footer {
     padding: 0;
   }
   .journey__title {
-    font-size: 50px;
-    line-height: 75px;
+    font-size: 28px;
+    line-height: 40px;
   }
   .journey__subtitle {
     display: none;
   }
   .journey__mainvideo {
     padding-bottom: 56%;
+    margin-bottom: 20px;
   }
   .journey__secondaryvideo {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1630,8 +1683,14 @@ footer {
     line-height: 19px;
   }
   .contacts__map {
-    max-width: 380px;
-    margin-bottom: 0px;
+    max-width: 390px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .contacts__map img {
+    margin-left: 0;
+    width: 100%;
+    object-fit: cover;
   }
 
   footer .footer__navigation__container {
@@ -1647,6 +1706,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    padding: 0;
   }
   footer .footer__navigation__text {
     font-size: 16px;
@@ -1654,7 +1714,7 @@ footer {
     margin: 15px;
     max-width: 420px;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 45px;
+    column-gap: 25px;
     justify-items: center;
   }
   footer .footer__navigation__icons {
@@ -1664,6 +1724,9 @@ footer {
     max-width: 400px;
     display: flex;
     justify-content: center;
+  }
+  footer .footer__navigation .icon {
+    margin: 0;
   }
   footer .copyrights__text:nth-child(2) {
     display: none;
