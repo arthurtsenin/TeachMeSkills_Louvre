@@ -3,16 +3,17 @@
 @media (max-width:768px) {
 	header {
 		.header {
+			padding: 0;
+			padding: 0 15px;
 
 			&__menu-container {
 				height: 110px;
-				padding: 0 15px;
 			}
 		}
 	
 		.banner__container {
 			max-width: 768px;
-			padding: 0 15px;
+			padding: 0;
 			display:block;
 			align-self: center;
 			height: 750px;
@@ -90,7 +91,7 @@
 			padding-bottom: 25px;
 		}
 		&__items {
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
 			align-items: start;
 			justify-items: center;
 			column-gap: 56px;
@@ -98,7 +99,7 @@
 		}
 		
 		.tour__item {
-			padding: 40px 0;
+			padding-top: 30px;
 			max-width: 280px;
 				&__title {
 				padding-top: 25px;
@@ -122,7 +123,6 @@
 			flex-direction: column;
 		}
 		&__text {
-			padding-left:15px;
 			max-width: 768px;
 			margin-bottom: 0px;
 			align-self: stretch;
@@ -141,6 +141,9 @@
 		}
 		&__text__subtitle {
 			display: none;
+		}
+		.explore__img {
+			margin-left: 0;
 		}
 		.explore__img img {
 			object-fit: cover;
@@ -181,7 +184,7 @@
 			line-height: 60px;
 		}
 		&__img{
-			grid-template-columns:  repeat(2, minmax(352px, 1fr));
+			grid-template-columns:  repeat(auto-fit, minmax(352px, 1fr));
 			gap: 24px;
 		}
 		&__img div {
@@ -246,37 +249,35 @@
 				padding-bottom: 15px;
 			}
 			&__map {
+				align-self: center;
 				max-width: 728px;
-				margin-bottom: 0px;
+				margin: 0;
 			}
-	
+
 	}
 		
 	footer {
-			background: $black;
-			.footer__navigation{
-				border-bottom: 3px solid #666666;
-				&__container {
-					padding: 65px 15px 50px 15px;
-					display: flex;
-					justify-content: space-between;
-					flex-wrap: wrap;
-	
-					
-				}
-				&__icons {
-					position: relative;
-					right: 0;
-					top: 0;
-				}
-				&__menu{
-	
-				}
-				&__icons{
-					align-self: flex-end;
-	
-				}
+		background: $black;
+		.footer__navigation{
+			border-bottom: 3px solid #666666;
+			&__container {
+				padding: 65px 15px 50px 15px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
 			}
+			&__icons {
+				position: relative;
+				right: 0;
+				top: 0;
+			}
+			&__menu{
+				padding:15px 0;
+			}
+			&__icons{
+				align-self: flex-end;
+			}
+		}
 	}
 }
 
